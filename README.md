@@ -38,6 +38,6 @@ https://github.com/mohitpanthri/EncodeMe/assets/99413629/4f3669aa-58ed-442a-9f9b
 
 <hr>
 
-© 2023 Mohit Panthri
+© 2024 M.AHMED HASHMI
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

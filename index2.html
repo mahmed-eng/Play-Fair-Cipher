@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ENCODEME</title>
+  <link rel="icon" type="logo" href="/src/images/favicon.ico">
+  <link
+    href="/src/bootstrap/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/src/main.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container-fluid logo">
+      <a class="navbar-brand" href="https://github.com/mohitpanthri/EncodeMe"><h3>E N C O D E <span> ME</span></h3></a>
+      <a class="github-repo" href="https://github.com/mohitpanthri/EncodeMe"><i
+          class="bi bi-github"></i></a>
+    </div>
+  </nav>
+
+  <main class="container-fluid">
+
+    <!-- Section to choose Ecryption Algorithms-->
+    <section class=" container nav-elements">
+      <ul class="nav nav-pills" id="tabs">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="playfair-cipher-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#playfair-cipher" type="button" role="tab"
+            aria-controls="playfair-cipher"
+            aria-selected="true">Playfair Cipher</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="container algorithms">
+      <div id="my-tab-content" class="container tab-content">
+
+        <!-- Playfair Cipher -->
+        <div class="tab-pane fade show active" id="playfair-cipher">
+          <h1>Playfair Cipher</h1>
+          <div class="mb-3">
+            <label for="playfairText" class="form-label">Enter
+              Plaintext/Ciphertext:</label>
+            <textarea class="form-control" id="playfairText" rows="3"
+              placeholder="Enter the text you want to Encrypt or Decrypt"></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="playfairKeyword" class="form-label">Enter the key:</label>
+            <input type="text" class="form-control" id="playfairKeyword"
+              placeholder="Enter the key">
+          </div>
+
+          <button type="button" id="playfairEncryptBtn"
+            class="btn btn-primary btn-sm">Encrypt</button>
+          <button type="button" id="playfairDecryptBtn"
+            class="btn btn-primary btn-sm">Decrypt</button>
+
+          <div class="mb-3">
+            <label for="playfairOutput" class="form-label">Result:</label>
+            <textarea class="form-control" id="playfairOutput" rows="3"
+              readonly></textarea>
+          </div>
+        </div>
+
+        <!-- End -->
+      </div>
+    </section>
+    <footer>
+      <p>Muhammad Ahmed Hashmi 2024</p>
+    </footer>
+  </main>
+
+  <script src="/src/scripts/playfair.js" type="module"></script>
+  <script src="/src/main.js" type="module"></script>
+
+  <script
+    src="/src/bootstrap/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
